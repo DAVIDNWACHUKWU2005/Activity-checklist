@@ -9,3 +9,45 @@ header{
   display: flex;
   margin-top: 80px;
 }
+
+.submit-btn{
+  padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #01368b, #6fd5ec);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(126, 34, 206, 0.35);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(1, 32, 99, 0.45);
+}
+
+.Task-container{
+  justify-content:center;
+}
+
+.Task-form{
+  display: flex;
+ justify-content: space-between;
+        width: 500px;
+        background: white;
+        padding: 8px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .task-placeholder {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px;
+    font-size: 16px;
+}
