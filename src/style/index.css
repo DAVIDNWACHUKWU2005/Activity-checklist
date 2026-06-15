@@ -1,10 +1,11 @@
 body{
     background-color: #6ed0e1;
+      font-family: "Roboto Slab", serif;
     
 }
 
 header{
-  color: rgb(27, 6, 6);
+  color: white;
   justify-content: center;
   display: flex;
   margin-top: 80px;
