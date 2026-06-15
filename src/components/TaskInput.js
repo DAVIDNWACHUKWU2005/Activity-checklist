@@ -1,18 +1,33 @@
+function TaskInput({ dispatch }) {
+  function handleSubmit(event) {
+    event.preventDefault();
 
+    const title = event.target.task.value;
 
-function TaskInput() {
-    return(
-     
-        <form className ="Task-form">
-            <input 
-            type = "text"
-            placeholder = "Enter your new task"
-            className="task-placeholder"
-            />
-            <button type = "submit" className="submit-btn">
-                add 
-            </button>
-        </form>
-    )
+    if (title.trim() === "") return;
+
+    dispatch({
+      type: "create",
+      title: title
+    });
+
+    event.target.reset();
+  }
+
+  return (
+    <form className="task-form" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="task"
+        placeholder="Enter your new task"
+        className="task-placeholder"
+      />
+
+      <button type="submit" className="submit-btn">
+        Add
+      </button>
+    </form>
+  );
 }
-export default TaskInput;
+
+export default TaskInput
